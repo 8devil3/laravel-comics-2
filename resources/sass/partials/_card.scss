@@ -1,6 +1,10 @@
 article {
    width: calc(100% / 6 - 1rem);
 
+   a {
+      color: $main-text-color;
+   }
+
    img {
    width: 100%;
    }

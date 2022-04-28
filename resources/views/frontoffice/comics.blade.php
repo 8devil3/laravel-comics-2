@@ -11,13 +11,17 @@
 
    <section id="comics" class="container">
       <div class="lbl">current series</div>
+
       @foreach ($comicsThumbs as $ct)
          <article>
-            <img src="{{ $ct['thumb'] }}" alt="{{ $ct['series'] }}"/>
-            <p class="comic-title">{{ $ct['series'] }}</p>
-            <p class="comic-title">{{ $ct['price'] }}</p>
+            <a href="{{ route('singleComic', $ct['id']) }}">
+               <img src="{{ $ct['thumb'] }}" alt="{{ $ct['series'] }}"/>
+               <p class="comic-title">{{ $ct['series'] }}</p>
+               <p class="comic-title">{{ $ct['price'] }}</p>
+            </a>
          </article>
       @endforeach
+
    </section>
 </main>
 @endsection

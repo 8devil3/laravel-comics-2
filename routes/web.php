@@ -19,8 +19,10 @@ Route::get('/characters', function () {
 })->name('characters');
 
 
+
+
 Route::get('/', function () {
-   $comicsThumbs = config('comicsThumbs');
+   $comicsThumbs = config('myData.comicsThumbs');
 
    $data1 = ['comicsThumbs' => $comicsThumbs];
 
@@ -28,9 +30,30 @@ Route::get('/', function () {
 })->name('comics');
 
 
+
+
+Route::get('/comics/{id}', function ($id) {
+   $comicsDetails = collect(config('myData.comicsDetails'));
+
+   $current = $comicsDetails->firstWhere('id', $id);
+   if ($current === null) {
+      abort(404);
+   }
+
+   return view('frontoffice.single', [
+      'title' => $current['title'],
+      'comic' => $current
+   ]);
+})->name('singleComic');
+
+
+
+
 Route::get('/movies', function () {
    return view('movies');
 })->name('movies');
+
+
 
 
 Route::get('/games', function () {
@@ -38,9 +61,13 @@ Route::get('/games', function () {
 })->name('games');
 
 
+
+
 Route::get('/collectibles', function () {
    return view('collectibles');
 })->name('collectibles');
+
+
 
 
 Route::get('/videos', function () {
@@ -48,14 +75,20 @@ Route::get('/videos', function () {
 })->name('videos');
 
 
+
+
 Route::get('/fans', function () {
    return view('fans');
 })->name('fans');
 
 
+
+
 Route::get('/news', function () {
    return view('news');
 })->name('news');
+
+
 
 
 Route::get('/shop', function () {

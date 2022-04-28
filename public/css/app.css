@@ -157,6 +157,9 @@ main #blue-icons {
 article {
   width: calc(16.6666666667% - 1rem);
 }
+article a {
+  color: #f1f1f1;
+}
 article img {
   width: 100%;
 }
