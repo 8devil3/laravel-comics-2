@@ -235,6 +235,15 @@ article .comic-price {
 #single .container .right {
   margin-left: 2rem;
 }
+#single .container .right .advertisement {
+  display: block;
+  text-align: right;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
 #single .container p {
   color: #555;
   font-weight: 500;

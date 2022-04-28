@@ -32,7 +32,17 @@
       @include flex(row, center, flex-start);
 
       .right {
-         margin-left: 2rem
+         margin-left: 2rem;
+
+         .advertisement {
+            display: block;
+            text-align: right;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            color: $single-text-color;
+            margin-bottom: 0.25rem;
+         }
       };
 
       p {
