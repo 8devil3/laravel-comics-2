@@ -1,0 +1,45 @@
+@import './_variables.scss';
+@import './_mixin.scss';
+
+header {
+   padding: 0 0.5rem;
+
+   .container {
+   @include flex(row, space-between, stretch);
+
+   nav {
+      @include flex();
+
+      a {
+         text-transform: uppercase;
+         color: $header-link-color;
+         font-family: 'Encode Sans Condensed', sans-serif;
+         font-weight: 700;
+         font-size: 0.8rem;
+         margin: 0 0 0 2rem;
+         display: block;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         border-bottom: 0.3rem transparent solid;
+
+         &:hover {
+            border-bottom: 0.3rem $primary-color solid;
+            color: $primary-color;
+         }
+      }
+
+      .active {
+            border-bottom: 0.3rem $primary-color solid;
+            color: $primary-color;
+         }
+   }
+
+   img {
+      height: 5rem;
+      width: 5rem;
+      display: block;
+      margin: 1rem 0;
+   }
+   }
+}
