@@ -4,7 +4,7 @@
       <nav>
         <a href="#"><span>characters</span></a>
 
-        <a href="{{ route('comics') }}" class="{{ Route::current()->getName() == 'comics' ? 'active' : '' }}"><span>comics</span></a>
+        <a href="{{ route('comics') }}" class="{{ Route::current()->getName() == 'comics' || Route::current()->getName() == 'singleComic' ? 'active' : '' }}"><span>comics</span></a>
 
         <a href="#"><span>movies</span></a>
 

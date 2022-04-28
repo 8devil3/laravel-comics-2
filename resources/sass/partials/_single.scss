@@ -54,6 +54,13 @@
    .container {
       @include flex(row, center, flex-start);
 
+      a.back {
+         display: block;
+         font-weight: 700;
+         color: $primary-color;
+         margin-bottom: 1rem;
+      }
+
       .right {
          margin-left: 2rem;
 

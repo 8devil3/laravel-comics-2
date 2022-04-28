@@ -22,6 +22,7 @@
    <section id="single">
       <div class="container">
          <div class="left">
+            <a href="{{ route('comics') }}" class="back">&larr; back to all comics</a>
             <h1>{{ $comic['title'] }}</h1>
             <div class="green-wrap">
                <div>

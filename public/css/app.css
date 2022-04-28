@@ -254,6 +254,12 @@ article .comic-price {
   flex-wrap: nowrap;
   flex-grow: 0;
 }
+#single .container a.back {
+  display: block;
+  font-weight: 700;
+  color: #0282F9;
+  margin-bottom: 1rem;
+}
 #single .container .right {
   margin-left: 2rem;
 }
