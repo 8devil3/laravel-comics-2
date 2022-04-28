@@ -221,6 +221,26 @@ article .comic-price {
   width: 100%;
   height: 100%;
 }
+#blue-banner .container .single-thumb .blue-label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+  color: #f1f1f1;
+  background-color: #00A9D9;
+  position: absolute;
+}
+#blue-banner .container .single-thumb .blue-label-top {
+  display: block;
+  top: 0;
+  left: 0;
+}
+#blue-banner .container .single-thumb .blue-label-bottom {
+  display: block;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
 #single {
   background-color: #fff;

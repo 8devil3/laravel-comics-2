@@ -12,7 +12,9 @@
    <div id="blue-banner">
       <div class="container">
          <div class="single-thumb">
+            <span class="blue-label blue-label-top">comic book</span>
             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+            <span class="blue-label blue-label-bottom">view gallery</span>
          </div>
       </div>
    </div>
