@@ -61,7 +61,7 @@
             <h3>Specs</h3>
             <div class="data-row">
                <span class="comic-data-title">Series:&nbsp;</span>
-               <span class="comic-data-blue">{{ $comic['series'] }}</span>
+               <span class="comic-data-blue uppercase">{{ $comic['series'] }}</span>
             </div>
             <div class="data-row">
                <span class="comic-data-title">U.S. Price:&nbsp;</span>
@@ -69,7 +69,28 @@
             </div>
             <div class="data-row">
                <span class="comic-data-title">On Sales Date:&nbsp;</span>
-               <span class="comic-data-content">{{ $comic['sale_date'] }}</span>
+               <span class="comic-data-content">{{ date_format(date_create_from_format('Y-m-d', $comic['sale_date']), 'M d Y') }}</span>
+            </div>
+         </div>
+      </div>
+
+      <div id="cta-wrapper">
+         <div class="container">
+            <div class="cta">
+               <p class="cta-text">digital comics</p>
+               <img src="{{ asset('/images/cta-icons/digital-comics.png') }}" alt="Digital Comics">
+            </div>
+            <div class="cta">
+               <p class="cta-text">shop dc</p>
+               <img src="{{ asset('/images/cta-icons/shop-dc.png') }}" alt="Shop DC">
+            </div>
+            <div class="cta">
+               <p class="cta-text">comic shop locator</p>
+               <img src="{{ asset('/images/cta-icons/comic-shop-locator.png') }}" alt="Comic Shop Locator">
+            </div>
+            <div class="cta">
+               <p class="cta-text">subscriptions</p>
+               <img src="{{ asset('/images/cta-icons/subscriptions.png') }}" alt="Subscriptions">
             </div>
          </div>
       </div>

@@ -51,7 +51,7 @@
          @include flex(row, space-between, center);
          background-color: $green-header-bg;
          margin: 1.2rem 0;
-         font-weight: 700;
+         font-weight: 600;
          border-bottom: 1px #357739 solid;
          font-size: 0.9rem;
 
@@ -76,7 +76,13 @@
          }
 
          select {
+            width: 140px;
             margin: 0 1rem;
+            background-color: transparent;
+            font-weight: 600;
+            border: 0;
+            text-transform: capitalize;
+            color: $main-text-color;
          }
       }
    }
@@ -85,7 +91,7 @@
 
 #comic-data {
    background-color: #F6F6F6;
-   padding: 1.5rem 0;
+   padding-top: 1.5rem;
    border-top: 2px #E3E3E3 solid;
 
    .container {
@@ -106,11 +112,11 @@
       .data-row {
          @include flex(row, space-between, flex-start);
          padding: 1rem 0;
-         border-top: 1px #E3E3E3 solid;
+         border-top: 1px $comic-data-border solid;
       }
 
       .data-row:last-child {
-         border-bottom: 1px #E3E3E3 solid;
+         border-bottom: 1px $comic-data-border solid;
       }
 
       h3 {
@@ -139,5 +145,33 @@
          color: $comic-data-blue;
          width: 75%;
       }
+
+      .uppercase {
+         text-transform: uppercase;
+      }
+   }
+
+   #cta-wrapper {
+      border-top: 1px $comic-data-border solid;
+      margin-top: 6rem;
+
+      .cta {
+         @include flex(row, space-between, flex-start, nowrap, 1);
+         border-left: 1px $comic-data-border solid;
+         padding: 1rem;
+
+         .cta-text {
+            text-transform: uppercase;
+            color: #9F9F9F;
+            font-weight: 700;
+            font-size: 0.75rem;
+         }
+      }
+
+      .cta:last-child {
+         border-right: 1px $comic-data-border solid;
+      }
    }
 }
+
+

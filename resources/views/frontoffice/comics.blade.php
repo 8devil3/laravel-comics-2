@@ -21,15 +21,29 @@
             </a>
          </article>
       @endforeach
-
    </section>
-
 
    <section id="blue-icons">
       <div class='container'>
          <div class="icon">
-            <img src="" alt="icon.text">
-            <p>{{ icon.text }}</p>
+            <img src="{{ asset('/images/icons/buy-comics-digital-comics.png') }}" alt="Digital Comics">
+            <p>digital comics</p>
+         </div>
+         <div class="icon">
+            <img src="{{ asset('/images/icons/buy-comics-merchandise.png') }}" alt="Merchandise">
+            <p>dc merchandise</p>
+         </div>
+         <div class="icon">
+            <img src="{{ asset('/images/icons/buy-comics-subscriptions.png') }}" alt="Subscriptions">
+            <p>subscriptions</p>
+         </div>
+         <div class="icon">
+            <img src="{{ asset('/images/icons/buy-comics-shop-locator.png') }}" alt="Shop locator">
+            <p>comic shop locator</p>
+         </div>
+         <div class="icon">
+            <img src="{{ asset('/images/icons/buy-dc-power-visa.svg') }}" alt="Power Visa">
+            <p>dc power visa</p>
          </div>
       </div>
    </section>
