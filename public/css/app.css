@@ -132,6 +132,8 @@ main #jumbotron {
 main #jumbotron img {
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   height: 100%;
   width: 100%;
 }
