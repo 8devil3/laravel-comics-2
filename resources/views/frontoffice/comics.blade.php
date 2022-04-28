@@ -23,5 +23,16 @@
       @endforeach
 
    </section>
+
+
+   <section id="blue-icons">
+      <div class='container'>
+         <div class="icon">
+            <img src="" alt="icon.text">
+            <p>{{ icon.text }}</p>
+         </div>
+      </div>
+   </section>
+
 </main>
 @endsection

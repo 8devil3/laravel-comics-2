@@ -1,0 +1,143 @@
+#blue-banner {
+   background-color: $primary-color;
+   height: 4rem;
+
+   .container{
+      position: relative;
+      height: 100%;
+
+      .single-thumb {
+         width: 12rem;
+         height: 18rem;
+         position: absolute;
+         bottom: 1rem;
+         left: 0;
+         border: 1px $main-text-color solid;
+
+         img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+         }
+      }
+   }
+}
+
+
+#single {
+   background-color: #fff;
+   padding: 4rem 0;
+
+   .container {
+      @include flex(row, center, flex-start);
+
+      .right {
+         margin-left: 2rem
+      };
+
+      p {
+         color: $single-text-color;
+         font-weight: 500;
+         line-height: 1.5;
+         letter-spacing: 0.5px;
+      }
+
+      h1 {
+         color: $single-header-color;
+         text-transform: uppercase;
+      }
+
+      .green-wrap {
+         @include flex(row, space-between, center);
+         background-color: $green-header-bg;
+         margin: 1.2rem 0;
+         font-weight: 700;
+         border-bottom: 1px #357739 solid;
+         font-size: 0.9rem;
+
+         > div {
+            @include flex(row, space-between, center);
+            width: 100%;
+            padding: 1rem;
+            border-right: 1px #357739 solid;
+
+            .green-label {
+               color: $green-header-text;
+            }
+
+            .green-price {
+               color: $main-text-color;
+            }
+
+            .green-availability {
+               color: $green-header-text;
+               text-transform: uppercase;
+            }
+         }
+
+         select {
+            margin: 0 1rem;
+         }
+      }
+   }
+}
+
+
+#comic-data {
+   background-color: #F6F6F6;
+   padding: 1.5rem 0;
+   border-top: 2px #E3E3E3 solid;
+
+   .container {
+      @include flex(row, center, flex-start);
+
+      .data-left, .data-right {
+         width: 50%;
+      }
+
+      .data-left {
+         margin-right: 2rem;
+      }
+
+      .data-right {
+         margin-left: 2rem;
+      }
+
+      .data-row {
+         @include flex(row, space-between, flex-start);
+         padding: 1rem 0;
+         border-top: 1px #E3E3E3 solid;
+      }
+
+      .data-row:last-child {
+         border-bottom: 1px #E3E3E3 solid;
+      }
+
+      h3 {
+         color: $single-header-color;
+         font-size: 1.2rem;
+         margin-bottom: 1.5rem;
+      }
+
+      .comic-data-title {
+         display: block;
+         color: $single-header-color;
+         font-weight: 600;
+         font-size: 0.9rem;
+         flex-shrink: 0;
+      }
+
+      .comic-data-content {
+         display: block;
+         color: $single-header-color;
+         font-size: 0.9rem;
+         width: 75%;
+      }
+
+      .comic-data-blue {
+         font-size: 0.9rem;
+         color: $comic-data-blue;
+         width: 75%;
+      }
+   }
+}

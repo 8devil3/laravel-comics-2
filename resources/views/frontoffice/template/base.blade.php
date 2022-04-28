@@ -8,7 +8,7 @@
    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
 
    <!-- Font -->
-   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200;400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200;400;500;600;700&display=swap" rel="stylesheet">
 
    <!-- Style -->
    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
